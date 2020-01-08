@@ -1,1 +1,5 @@
-<p>text-area works!</p>
+<textarea #textarea *ngIf="editState" [(ngModel)]="textArea">
+
+</textarea>
+<div *ngIf="!editState" [innerHTML] = textArea></div>
+<button type="button" class="btn btn-primary" (click) = saveText();>{{!editState ? 'Edit' : 'Save'}}</button>

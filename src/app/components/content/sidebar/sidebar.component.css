@@ -1,0 +1,22 @@
+textarea, div {
+  min-height: 65vh;
+  padding: .5rem;
+  border: 1px solid #000;
+}
+
+button {
+  margin-top: 1rem;
+}
+
+
+
+p:hover span {
+  display: inline-block;
+}
+
+p > span {
+  display: none;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}

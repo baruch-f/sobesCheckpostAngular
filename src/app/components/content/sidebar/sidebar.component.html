@@ -1,1 +1,5 @@
-<p>sidebar works!</p>
+<div #wordsList>
+  <p *ngFor="let word of wordsServise.words">{{word}} <span (click) = deleteWord(word);>x</span></p>
+</div>
+<button type="button" class="btn btn-primary" [disabled]="this.editState" (click) = addWord();>+ Add Word</button>
+
